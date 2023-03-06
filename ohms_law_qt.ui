@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainwindow</class>
+ <widget class="QMainWindow" name="mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Ohm's Law</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedKingdom"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_header">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>109</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bitter</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ohm's Law</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkbox_three_phases">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>70</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3 phases?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_image_ohms_law">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>210</y>
+      <width>269</width>
+      <height>268</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>ohms_law.gif</pixmap>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>31</y>
+      <width>281</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="grid_input">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_input_power">
+       <property name="text">
+        <string>1. Power (p in Watts):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="input_power"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_input_resistance">
+       <property name="text">
+        <string>2. Resistance (r in Ohm):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="input_resistance"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_input_voltage">
+       <property name="text">
+        <string>3. Voltage (v in Volts):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="input_voltage"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_input_current">
+       <property name="text">
+        <string>4. Current (i in Ampere):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="input_current"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>281</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="grid_buttons">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="button_calculate">
+       <property name="text">
+        <string>Calculate!</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="button_clear">
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>300</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
